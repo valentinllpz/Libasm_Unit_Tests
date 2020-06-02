@@ -25,32 +25,32 @@ do
     case $opt in
         "Test all")
             echo "Testing all..."
-			gcc -Wall -Wextra -Werror main.c -L . -lasm && ./a.out "0"
+			gcc -Wall -Wextra -Werror main.c -L .. -lasm && ./a.out "0"
             break
             ;;
         "Test ft_strlen")
             echo "Testing only ft_strlen..."
-            gcc -Wall -Wextra -Werror main.c -L . -lasm && ./a.out "1"
+            gcc -Wall -Wextra -Werror main.c -L .. -lasm && ./a.out "1"
             ;;
         "Test ft_strcpy")
             echo "Testing only ft_strcpy..."
-            gcc -Wall -Wextra -Werror main.c -L . -lasm && ./a.out "2"
+            gcc -Wall -Wextra -Werror main.c -L .. -lasm && ./a.out "2"
             ;;
         "Test ft_strcmp")
             echo "Testing only ft_strcmp..."
-            gcc -Wall -Wextra -Werror main.c -L . -lasm && ./a.out "3"
+            gcc -Wall -Wextra -Werror main.c -L .. -lasm && ./a.out "3"
             ;;
         "Test ft_write")
             echo "Testing only ft_write..."
-            gcc -Wall -Wextra -Werror main.c -L . -lasm && ./a.out "4"
+            gcc -Wall -Wextra -Werror main.c -L .. -lasm && ./a.out "4"
             ;;
         "Test ft_read")
             echo "Testing only ft_read..."
-            gcc -Wall -Wextra -Werror main.c -L . -lasm && ./a.out "5"
+            gcc -Wall -Wextra -Werror main.c -L .. -lasm && ./a.out "5"
             ;;
         "Test ft_strdup")
             echo "Testing only ft_strdup..."
-            gcc -Wall -Wextra -Werror main.c -L . -lasm && ./a.out "6"
+            gcc -Wall -Wextra -Werror main.c -L .. -lasm && ./a.out "6"
             ;;
         "Quit")
             break

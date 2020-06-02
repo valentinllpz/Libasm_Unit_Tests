@@ -6,7 +6,7 @@
 /*   By: vlugand- <vlugand-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/19 17:36:27 by vlugand-          #+#    #+#             */
-/*   Updated: 2020/06/02 18:18:43 by vlugand-         ###   ########.fr       */
+/*   Updated: 2020/06/02 18:27:09 by vlugand-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include "libasm.h"
+#include "../libasm.h"
 
 void	red() 
 {
