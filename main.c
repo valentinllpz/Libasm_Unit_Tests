@@ -6,11 +6,18 @@
 /*   By: vlugand- <vlugand-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/19 17:36:27 by vlugand-          #+#    #+#             */
-/*   Updated: 2020/06/02 16:37:28 by vlugand-         ###   ########.fr       */
+/*   Updated: 2020/06/02 18:18:43 by vlugand-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <errno.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 #include "libasm.h"
 
 void	red() 
