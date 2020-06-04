@@ -3,28 +3,24 @@
 libasm_path='../'
 incl_path=$libasm_path
 
-touch tmp{1..5}
-echo "For, after all, how do we know that two and two make four? Or that the force of gravity works? Or that the past is unchangeable? If both the past and the external world exist only in the mind, and if the mind itself is controllable – what then?" >> tmp6
-
 recompile () {
 	if ! make bonus -C $libasm_path 1>/dev/null 2>/dev/null ; then
 		printf "\e[0;91mError: couldn't compile bonus\e[0m\n" >&2
-		rm -f tmp*
 		if ! make -C $libasm_path 1>/dev/null ; then
 			printf "\e[0;91mError: couldn't compile\e[0m\n" >&2  && return 1
-			rm -f tmp*
 		fi
 	fi
 	if ! clang -Wall -Wextra -Werror -I $incl_path main.c -L $libasm_path -lasm 1>/dev/null
 	then
 		printf "\e[0;91m\t\tError: couldn't compile binary\e[0m\n" >&2  && return 1
-		rm -f tmp*
 	fi
 }
-
 if ! recompile ; then
 	exit 1
 fi
+
+touch tmp{1..5}
+echo "For, after all, how do we know that two and two make four? Or that the force of gravity works? Or that the past is unchangeable? If both the past and the external world exist only in the mind, and if the mind itself is controllable – what then?" >> tmp6
 
 clear
 printf "\e[1;35m"
