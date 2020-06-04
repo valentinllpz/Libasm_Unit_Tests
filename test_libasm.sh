@@ -1,6 +1,6 @@
 touch tmp{1..5}
 echo "For, after all, how do we know that two and two make four? Or that the force of gravity works? Or that the past is unchangeable? If both the past and the external world exist only in the mind, and if the mind itself is controllable – what then?" >> tmp6
-make
+make -C ../
 clear
 printf "\e[1;35m"
 printf "#******************************************************************************#\n"
@@ -59,4 +59,4 @@ do
     esac
 done
 rm tmp*
-make clean
+make clean -C ../
