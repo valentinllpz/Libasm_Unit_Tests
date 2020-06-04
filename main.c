@@ -6,7 +6,7 @@
 /*   By: vlugand- <vlugand-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/19 17:36:27 by vlugand-          #+#    #+#             */
-/*   Updated: 2020/06/04 03:11:23 by mli              ###   ########.fr       */
+/*   Updated: 2020/06/04 18:40:59 by vlugand-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -160,10 +160,9 @@ void	test_ft_strlen(char *s1, char *s2)
 
 void	test_ft_strcpy(char *s1, char *s2)
 {
-	char dst[1816];
-	char *res1;
-	char *res2;
-
+	char	 	dst[1816];
+	char 		*res1;
+	char 		*res2;
 
 	cyan();
 	printf("================================== ft_strcpy ===================================\n\n");
@@ -352,7 +351,6 @@ void	test_ft_strdup(char *s1, char *s2)
 	char 		*res1;
 	char 		*res2;
 
-
 	cyan();
 	printf("================================== ft_strdup ===================================\n\n");
 	reset();
@@ -373,7 +371,6 @@ void	test_ft_strdup(char *s1, char *s2)
 	free(res1);
 	free(res2);
 }
-
 
 int 	main(int ac, char **av)
 {
@@ -448,7 +445,7 @@ int 	main(int ac, char **av)
                 .'        /\"'          |  \"'   '_\n\
                /_|.-'\\ ,\".             '.'`__'-( \\\n\
                  / ,\"'\"\\,'               `/  `-.|\"\n\n ";
-	char s4[] = "            _,..-\"\"\"--' `,.-\".\n\
+	char		s4[] = "            _,..-\"\"\"--' `,.-\".\n\
           ,'      __.. --',  |\n\
         _/   _.-\"' |    .' | |       ____\n\
   ,.-\"\"'    `-\"+.._|     `.' | `-..,',--.`.\n\
