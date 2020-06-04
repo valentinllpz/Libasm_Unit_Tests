@@ -11,7 +11,7 @@ You must have your Makefile ready before using this tester.
 
 `cd` to your libasm directory
 
-`git clone https://github.com/valentinllpz/Libasm_Unit_Tests.git`
+`git clone https://github.com/valentinllpz/Libasm_Unit_Tests.git && cd ./Libasm_Unit_Tests/`
 
 `bash test_libasm.sh` or `./test_libasm.sh`
 
