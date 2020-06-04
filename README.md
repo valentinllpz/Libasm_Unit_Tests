@@ -9,15 +9,15 @@ You must have your Makefile ready before using this tester.
 
 # HOW TO USE
 
-`cd` to your libasm directory
+1. `cd` to your libasm directory
 
-`git clone https://github.com/valentinllpz/Libasm_Unit_Tests.git && cd ./Libasm_Unit_Tests/`
+2. `git clone https://github.com/valentinllpz/Libasm_Unit_Tests.git && cd ./Libasm_Unit_Tests/`
 
-`bash test_libasm.sh` or `./test_libasm.sh`
+3. `bash test_libasm.sh` or `./test_libasm.sh`
 
-You can test all your functions or select a specific one to test in the menu.
+4. You can test all your functions or select a specific one to test in the menu.
 
-By default (you can change in `test_libasm.sh`):
+Note : Feel free to change your libasm path in `test_libasm.sh`:
 ```
 libasm_path='../'
 incl_path=$libasm_path
@@ -25,3 +25,5 @@ incl_path=$libasm_path
 
 ### Todos :
 - [ ] Tests for bonuses
+
+Big up to @mli42 for improving this tester. 
