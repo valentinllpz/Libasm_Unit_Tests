@@ -4,12 +4,12 @@ libasm_path='../'
 incl_path=$libasm_path
 
 recompile () {
-	if ! make bonus -C $libasm_path 1>/dev/null 2>/dev/null ; then
-		printf "\e[0;91mError: couldn't compile bonus\e[0m\n" >&2
+#	if ! make bonus -C $libasm_path 1>/dev/null 2>/dev/null ; then
+#		printf "\e[0;91mError: couldn't compile bonus\e[0m\n" >&2
 		if ! make -C $libasm_path 1>/dev/null ; then
 			printf "\e[0;91mError: couldn't compile\e[0m\n" >&2  && return 1
 		fi
-	fi
+#	fi
 	if ! clang -Wall -Wextra -Werror -I $incl_path main.c -L $libasm_path -lasm 1>/dev/null
 	then
 		printf "\e[0;91m\t\tError: couldn't compile binary\e[0m\n" >&2  && return 1
@@ -79,5 +79,5 @@ do
         *) echo "invalid option $REPLY";;
     esac
 done
-rm -f tmp*
+rm -f tmp* a.out
 make clean -C $libasm_path >> /dev/null
