@@ -9,6 +9,10 @@ You must have your Makefile ready before using this tester.
 
 # HOW TO USE
 
+`cd` to your libasm directory
+
+`git clone https://github.com/valentinllpz/Libasm_Unit_Tests.git`
+
 `bash test_libasm.sh`
 
 You can test all your functions or select a specific one to test in the menu.
