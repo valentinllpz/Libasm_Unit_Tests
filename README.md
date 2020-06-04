@@ -26,4 +26,5 @@ incl_path=$libasm_path
 ### Todos :
 - [ ] Tests for bonuses
 
-Big up to @mli42 for improving this tester. 
+
+*Big up to @mli42 for improving this tester.* 
