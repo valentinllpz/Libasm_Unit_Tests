@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-libasm_path='../'
+libasm_path='..'
 incl_path=$libasm_path
 
 recompile () {
@@ -10,7 +10,7 @@ recompile () {
 			printf "\e[0;91mError: couldn't compile\e[0m\n" >&2  && return 1
 		fi
 #	fi
-	if ! clang -Wall -Wextra -Werror -I $incl_path main.c -L $libasm_path -lasm 1>/dev/null
+	if ! clang -Wall -Wextra -Werror -I $incl_path srcs/main.c srcs/utils_test_1.c srcs/utils_test_2.c srcs/test_ft_1.c srcs/test_ft_2.c srcs/test_ft_3.c srcs/get_next_line/*.c -L $libasm_path -lasm 1>/dev/null
 	then
 		printf "\e[0;91m\t\tError: couldn't compile binary\e[0m\n" >&2  && return 1
 	fi
@@ -80,4 +80,4 @@ do
     esac
 done
 rm -f tmp* a.out
-make clean -C $libasm_path >> /dev/null
+make fclean -C $libasm_path >> /dev/null
