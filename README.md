@@ -1,15 +1,30 @@
-# How to test
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/54294833/83541707-497e1380-a4fa-11ea-82ed-a974dd96a910.png"
+       title="Libasm Img">
+</p>
 
-Simply use "bash test_libasm.sh". 
-Please note that this project has been designed to work on Ubuntu 18.04.4 and Mac OS 10.14
+# PREREQUISITE
 
-# Some useful ressources to learn assembly
+You must have your Makefile ready before using this tester.
 
-https://www.conradk.com/codebase/2017/06/06/x86-64-assembly-from-scratch/
-https://0xax.github.io/
-https://cs.lmu.edu/~ray/notes/nasmtutorial/?fbclid=IwAR3P3rPLvZNvX1fl9yx6KjEtcFhg4U9pMycdWakopjTa-Amkbnql7752PeQ
-https://fr.wikipedia.org/wiki/RFLAGS
-https://www.cs.uaf.edu/2017/fall/cs301/reference/x86_64.html
-https://filippo.io/making-system-calls-from-assembly-in-mac-os-x/
-https://www.youtube.com/watch?v=75gBFiFtAb8
-https://www.youtube.com/watch?v=OWwC_3L26nE
+# HOW TO USE
+
+1. `cd` to your libasm directory
+
+2. `git clone https://github.com/valentinllpz/Libasm_Unit_Tests.git && cd ./Libasm_Unit_Tests/`
+
+3. `bash test_libasm.sh` or `./test_libasm.sh`
+
+4. You can test all your functions or select a specific one to test in the menu.
+
+Note : Feel free to change your libasm path in `test_libasm.sh`:
+```
+libasm_path='../'
+incl_path=$libasm_path
+```
+
+### Todos :
+- [ ] Tests for bonuses
+
+
+*Big up to @mli42 for improving this tester.* 
