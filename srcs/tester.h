@@ -6,7 +6,7 @@
 /*   By: vlugand- <vlugand-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/05 16:45:10 by user42            #+#    #+#             */
-/*   Updated: 2020/11/20 16:34:57 by vlugand-         ###   ########.fr       */
+/*   Updated: 2021/01/11 18:29:13 by ykoh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <sys/stat.h>
 # include <fcntl.h>
 # include <stdio.h>
+# include <errno.h>
 
 # define RED "\033[0;31m"
 # define GREEN "\033[0;32m"
