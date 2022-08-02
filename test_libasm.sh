@@ -23,7 +23,7 @@ touch tmp{1..5}
 echo "For, after all, how do we know that two and two make four? Or that the force of gravity works? Or that the past is unchangeable? If both the past and the external world exist only in the mind, and if the mind itself is controllable – what then?" >> tmp6
 
 clear
-printf "\e[1;35m"
+printf "\e[0;36m"
 printf "# ****************************************************************************** #\n"
 printf "#                                                                                #\n"
 printf "#                    :::          :::                                            #\n"
